@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WMT_MS_Capabilities version="1.1.1" updateSequence="63258">
+	<Service>
+		<Name>OGC:WMS</Name>
+		<Title>CSR Web Map Service</Title>
+		<Abstract>Compliant WMS Response</Abstract>
+		<KeywordList>
+			<Keyword>WFS</Keyword>
+			<Keyword>WMS</Keyword>
+			<Keyword>GEOSERVER</Keyword>
+		</KeywordList>
+		<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoserver.sourceforge.net/html/index.php"></OnlineResource>
+		<ContactInformation>
+			<ContactPersonPrimary>
+				<ContactPerson>GITHUB owner</ContactPerson>
+				<ContactOrganization>GITHUB owner</ContactOrganization>
+			</ContactPersonPrimary>
+			<ContactPosition>Chief geographer</ContactPosition>
+			<ContactAddress>
+				<AddressType>Work</AddressType>
+				<Address></Address>
+				<City>Alexandria</City>
+				<StateOrProvince></StateOrProvince>
+				<PostCode></PostCode>
+				<Country>Egypt</Country>
+			</ContactAddress>
+			<ContactVoiceTelephone></ContactVoiceTelephone>
+			<ContactFacsimileTelephone></ContactFacsimileTelephone>
+			<ContactElectronicMailAddress>claudius.ptolomaeus@gmail.com</ContactElectronicMailAddress>
+		</ContactInformation>
+		<Fees>NONE</Fees>
+		<AccessConstraints>NONE</AccessConstraints>
+	</Service>
+	<Capability>
+		<Request>
+			<GetCapabilities>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+						<Post>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Post>
+					</HTTP>
+				</DCPType>
+			</GetCapabilities>
+			<GetMap>
+				<Format>image/png</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetMap>
+			<GetFeatureInfo>
+				<Format>text/plain</Format>
+				<Format>application/vnd.ogc.gml</Format>
+				<Format>application/vnd.ogc.gml/3.1.1</Format>
+				<Format>text/html</Format>
+				<Format>application/json</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+						<Post>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Post>
+					</HTTP>
+				</DCPType>
+			</GetFeatureInfo>
+			<DescribeLayer>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</DescribeLayer>
+			<GetLegendGraphic>
+				<Format>image/png</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetLegendGraphic>
+			<GetStyles>
+				<Format>application/vnd.ogc.sld+xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetStyles>
+		</Request>
+		<Exception>
+			<Format>application/vnd.ogc.se_xml</Format>
+			<Format>application/vnd.ogc.se_inimage</Format>
+		</Exception>
+		<VendorSpecificCapabilities>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:tatortsgrans</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:tatortsgrans</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utomr_bostader</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utomr_bostader</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utvomr_tatsk</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utvomr_tatsk</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utomr_centrum</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utomr_centrum</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utvomr_sko</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utvomr_sko</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utvomr_industri</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utvomr_industri</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utvomr_ej</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:utvomr_ej</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:bevarandeomrade_natur_och_f</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:bevarandeomrade_natur_och_f</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:bevarandeomrade_oppenmark</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:bevarandeomrade_oppenmark</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:bevarandeomrade_oppenmark_o</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:bevarandeomrade_oppenmark_o</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<CustomLayer>
+				<Name>GH:utvomr_traf</Name>
+				<Title>utvomr_traf</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
+		</VendorSpecificCapabilities>
+		<UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"></UserDefinedSymbolization>
+		<Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:tatortsgrans</Name>
+				<Title>tatortsgrans</Title>
+				<Abstract>GH:tatortsgrans ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="14.670982031063463" miny="60.445869119673844" maxx="15.24307307624528" maxy="60.613334037746654"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="131981.509003426" miny="6703794.57499874" maxx="163311.706992488" maxy="6722408.95099601"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=tatortsgrans"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:utomr_bostader</Name>
+				<Title>utomr_bostader</Title>
+				<Abstract>GH:utomr_bostader ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="14.707698484586919" miny="60.45925796077325" maxx="15.237609683335918" maxy="60.6118573695374"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="133991.566993328" miny="6705276.9459963" maxx="163013.09999677" maxy="6722244.42699929"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=utomr_bostader"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:utvomr_tatsk</Name>
+				<Title>utvomr_tatsk</Title>
+				<Abstract>GH:utvomr_tatsk ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="14.699764390488776" miny="60.4506666542494" maxx="15.22266679630486" maxy="60.60336984340946"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="133552.716995057" miny="6704321.65500275" maxx="162197.921996942" maxy="6721298.7149988"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=utvomr_tatsk"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:utomr_centrum</Name>
+				<Title>utomr_centrum</Title>
+				<Abstract>GH:utomr_centrum ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="14.72635738224201" miny="60.45583873056127" maxx="15.204842455939515" maxy="60.59757878469695"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="135006.850000669" miny="6704891.62799792" maxx="161223.488001787" maxy="6720653.46200093"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=utomr_centrum"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:utvomr_sko</Name>
+				<Title>utvomr_sko</Title>
+				<Abstract>GH:utvomr_sko ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="14.709508706727608" miny="60.4586715132677" maxx="15.233688613054841" maxy="60.59267188838041"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="134081.2659935" miny="6705211.2080003" maxx="162805.950004138" maxy="6720106.7249975"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=utvomr_sko"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:utvomr_industri</Name>
+				<Title>utvomr_industri</Title>
+				<Abstract>GH:utvomr_industri ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="14.716960879806964" miny="60.45004228837937" maxx="15.217593009807587" maxy="60.55877026797119"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="134473.392996108" miny="6704248.02699723" maxx="161936.410993324" maxy="6716329.34499853"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=utvomr_industri"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:utvomr_ej</Name>
+				<Title>utvomr_ej</Title>
+				<Abstract>GH:utvomr_ej ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="14.676245272768071" miny="60.466073218733094" maxx="15.209997639817342" maxy="60.556131524884044"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="132238.381001113" miny="6706044.48400249" maxx="161520.68999552" maxy="6716035.32400123"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=utvomr_ej"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:bevarandeomrade_natur_och_f</Name>
+				<Title>bevarandeomrade_natur_och_f</Title>
+				<Abstract>GH:bevarandeomrade_natur_och_f ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="14.675707057159517" miny="60.4475856371661" maxx="15.243057387068868" maxy="60.61124765630645"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="132239.131003768" miny="6703984.56099935" maxx="163311.706997146" maxy="6722176.49599932"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bevarandeomrade_natur_och_f"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:bevarandeomrade_oppenmark</Name>
+				<Title>bevarandeomrade_oppenmark</Title>
+				<Abstract>GH:bevarandeomrade_oppenmark ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="14.701645410771965" miny="60.460839765887975" maxx="15.2417996712455" maxy="60.60522876212154"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="133656.70299922" miny="6705454.68799675" maxx="163245.290002745" maxy="6721505.84300341"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bevarandeomrade_oppenmark"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:bevarandeomrade_oppenmark_o</Name>
+				<Title>bevarandeomrade_oppenmark_o</Title>
+				<Abstract>GH:bevarandeomrade_oppenmark_o ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸disabledownload˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="15.135355587105588" miny="60.537410062675924" maxx="15.186759379423078" maxy="60.55022706676733"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="157429.992999797" miny="6713963.88499999" maxx="160247.652000088" maxy="6715385.08399996"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=bevarandeomrade_oppenmark_o"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+		</Layer>
+	</Capability>
+</WMT_MS_Capabilities>
